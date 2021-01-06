@@ -14,6 +14,6 @@ class Player  {
     display(){
       var pos =this.body.position;
     imageMode(CENTER);
-    image(this.image, pos.x, pos.y, this.width, this.height+10);
+    image(this.image, pos.x, pos.y, this.width, this.height);
     }
   };
