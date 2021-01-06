@@ -93,7 +93,7 @@ function keyPressed(){
      if(keyDown(83)){
          player.body.position.x+=-1
      }
-      if((74)){
-       player.body.position.y+=-8
-       }
+      //if((74)){
+     //  player.body.position.y+=-8
+     //  }
 }
