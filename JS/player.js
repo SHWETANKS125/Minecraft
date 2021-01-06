@@ -12,9 +12,7 @@ class Player  {
     }
     display(){
       var pos =this.body.position;
-      push();
     imageMode(CENTER);
-    image(this.image, pos.x, pos.y-20, this.width, this.height+10);
-    pop();
+    image(this.image, pos.x, pos.y, this.width, this.height+10);
     }
   };

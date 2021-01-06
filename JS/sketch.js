@@ -42,22 +42,21 @@ function setup(){
  }
  trees(2025,height-430);
 
- //player = new Player(400,height-430);
+ player = new Player(400,height-780);
  }
 function draw(){
 background(153,217,234);
 Engine.update(engine);
-//if(keyDown(87)){
- //   player.body.position.x+=3
- //  }
-//if(keyDown(83)){
-//player.body.position.x+=-3
-   //}
-  // if(keyWentDown(32)){
-  //  player.body.position.y+=-20
- //  }
-   //player.body.position.y+=0.9
-  // player.display();
+if(keyDown(87)){
+   player.body.position.x+=3
+  }
+if(keyDown(83)){
+    player.body.position.x+=-3
+}
+ if(keyWentDown(32)){
+  player.body.position.y+=-20
+  }
+ 
 for (let p = 0; p < bedrocks.length; p++) {
     bedrocks[p].display();
 }
@@ -81,7 +80,7 @@ for (let k = 0; k < logs.length; k++) {
 for (let y = 0; y < leaves.length; y++) {
     leaves[y].display();
 }
- //player.display();
+ player.display();
 }
 
 function trees(x,y){
