@@ -32,7 +32,8 @@ function setup(){
   stones.push(new Stone(x,height-580,50,50))
   stones.push(new Stone(x,height-630,50,50))
   stones.push(new Stone(x,height-680,50,50))
-  stones.push(new DIRT(x,height-730,50,50))
+  dirts.push(new DIRT(x,height-730,50,50))
+  dirts.push(new DIRT(x,height-780,50,50))
  }
  trees(2025,height-430);
 
@@ -41,16 +42,7 @@ function setup(){
 function draw(){
 background(153,217,234);
 Engine.update(engine);
-if(keyDown(87)){
-   player.body.position.x+=3
-  }
-if(keyDown(83)){
-    player.body.position.x+=-3
-}
- if(keyWentDown(32)){
-  player.body.position.y+=-20
-  }
- 
+keyPressed();
 for (let p = 0; p < bedrocks.length; p++) {
     bedrocks[p].display();
 }
@@ -92,4 +84,16 @@ function trees(x,y){
     leaves.push(new Leaves(x-50,y-200,50,50))
     leaves.push(new Leaves(x+50,y-200,50,50))
     leaves.push(new Leaves(x,y-250,50,50))
+}
+
+function keyPressed(){
+    if(keyDown(87)){
+        player.body.position.x+=1
+       }
+     if(keyDown(83)){
+         player.body.position.x+=-1
+     }
+      if((74)){
+       player.body.position.y+=-8
+       }
 }
