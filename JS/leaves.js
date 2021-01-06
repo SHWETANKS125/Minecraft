@@ -7,6 +7,7 @@ class Leaves  {
           this.width = width;
           this.height = height;
       this.image = loadImage("IMG/leaves.png");
+      World.add(world, this.body);
     }
     display(){
       var pos =this.body.position;

@@ -1,7 +1,7 @@
 const Engine = Matter.Engine;
-const World= Matter.World;
-const Bodies = Matter.Bodies;
-const Constraint = Matter.Constraint;
+const  World= Matter.World;
+const  Bodies = Matter.Bodies;
+const  Constraint = Matter.Constraint;
 
 var bedrocksnum=30;
 var bedrocks=[];
@@ -11,12 +11,6 @@ var dirts=[];
 var logs=[];
 var leaves=[];
 var x =-25;
-
-var player;
-
-function preload(){
-
-}
 
 function setup(){
  createCanvas(5000,1820);
@@ -42,7 +36,7 @@ function setup(){
  }
  trees(2025,height-430);
 
- player = new Player(400,height-780);
+ player = new Player(400,height-800);
  }
 function draw(){
 background(153,217,234);

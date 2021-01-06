@@ -7,6 +7,7 @@ class BedRock {
           this.width = width;
           this.height = height;
       this.image = loadImage("IMG/bedrock.png");
+      World.add(world, this.body);
     }
     display(){
       var pos =this.body.position;

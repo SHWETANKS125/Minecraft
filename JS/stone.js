@@ -7,6 +7,7 @@ class Stone  {
         this.width = width;
         this.height = height;
     this.image = loadImage("IMG/stone.jpg");
+    World.add(world, this.body);
   }
   display(){
     var pos =this.body.position;

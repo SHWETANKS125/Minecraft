@@ -7,6 +7,7 @@ class GRASS{
         this.width = width;
         this.height = height;
     this.image = loadImage("IMG/grass.png");
+    World.add(world, this.body);
   }
   display(){
     var pos =this.body.position;

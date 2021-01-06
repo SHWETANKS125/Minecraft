@@ -7,6 +7,7 @@ class DIRT{
           this.width = width;
           this.height = height;
       this.image = loadImage("IMG/dirt.jpg");
+      World.add(world, this.body);
     }
     display(){
       var pos =this.body.position;
