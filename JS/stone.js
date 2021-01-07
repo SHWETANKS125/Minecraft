@@ -1,11 +1,11 @@
 class Stone  {
-  constructor(x, y, width, height){
+  constructor(x, y){
     var options = {
       isStatic: true
   }
     this.body = Bodies.rectangle(x, y, width, height, options);
-        this.width = width;
-        this.height = height;
+        this.width = 50;
+        this.height = 50;
     this.image = loadImage("IMG/stone.jpg");
     World.add(world, this.body);
   }
