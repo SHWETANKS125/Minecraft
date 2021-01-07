@@ -20,7 +20,7 @@ function setup(){
      x=x+50
  bedrocks.push(new BedRock(x,height-30))
  stones.push(new Stone(x,height-80))
- /* stones.push(new Stone(x,height-130))
+  stones.push(new Stone(x,height-130))
   stones.push(new Stone(x,height-180))
   stones.push(new Stone(x,height-230))
   stones.push(new Stone(x,height-280))
@@ -31,7 +31,7 @@ function setup(){
   stones.push(new Stone(x,height-530))
   stones.push(new Stone(x,height-580))
   stones.push(new Stone(x,height-630))
-  stones.push(new Stone(x,height-680))*/
+  stones.push(new Stone(x,height-680))
   dirts.push(new DIRT(x,height-730))
   dirts.push(new DIRT(x,height-780))
   grass.push(new GRASS(x,height-830))

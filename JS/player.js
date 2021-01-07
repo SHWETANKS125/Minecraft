@@ -15,5 +15,7 @@ class Player  {
       var pos =this.body.position;
     imageMode(CENTER);
     image(this.image, pos.x, pos.y, this.width, this.height);
+    camera.position.x = pos.x; 
+    camera.position.y = pos.y;
     }
   };
