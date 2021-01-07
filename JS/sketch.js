@@ -20,7 +20,7 @@ function setup(){
      x=x+50
  bedrocks.push(new BedRock(x,height-30))
  stones.push(new Stone(x,height-80))
-  stones.push(new Stone(x,height-130))
+ /* stones.push(new Stone(x,height-130))
   stones.push(new Stone(x,height-180))
   stones.push(new Stone(x,height-230))
   stones.push(new Stone(x,height-280))
@@ -31,7 +31,7 @@ function setup(){
   stones.push(new Stone(x,height-530))
   stones.push(new Stone(x,height-580))
   stones.push(new Stone(x,height-630))
-  stones.push(new Stone(x,height-680))
+  stones.push(new Stone(x,height-680))*/
   dirts.push(new DIRT(x,height-730))
   dirts.push(new DIRT(x,height-780))
   grass.push(new GRASS(x,height-830))
@@ -39,7 +39,8 @@ function setup(){
  trees(175,height-930);
  hill(125,height-880)
 
- player = new Player(400,height-800);
+ player = new Player(525,height-830);
+ Matter.Body.setStatic(player.body,false);
  }
 function draw(){
 background(153,217,234);
@@ -69,6 +70,7 @@ for (let y = 0; y < leaves.length; y++) {
     leaves[y].display();
 }
  player.display();
+ console.log(player.position)
 }
 
 function trees(x,y){
