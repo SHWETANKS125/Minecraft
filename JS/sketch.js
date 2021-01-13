@@ -20,7 +20,7 @@ function setup(){
      x=x+50
  bedrocks.push(new BedRock(x,height-30))
  stones.push(new Stone(x,height-80))
-  stones.push(new Stone(x,height-130))
+  /*stones.push(new Stone(x,height-130))
   stones.push(new Stone(x,height-180))
   stones.push(new Stone(x,height-230))
   stones.push(new Stone(x,height-280))
@@ -30,22 +30,21 @@ function setup(){
   stones.push(new Stone(x,height-480))
   stones.push(new Stone(x,height-530))
   stones.push(new Stone(x,height-580))
-  stones.push(new Stone(x,height-630))
+  stones.push(new Stone(x,height-630))*/
   stones.push(new Stone(x,height-680))
   dirts.push(new DIRT(x,height-730))
   dirts.push(new DIRT(x,height-780))
   grass.push(new GRASS(x,height-830))
  }
- trees(175,height-930);
- hill(125,height-880)
+ //trees(175,height-930);
+// hill(125,height-880)
 
- player = new Player(525,height-830);
- Matter.Body.setStatic(player.body,false);
+ player = new Player(785,height-930);
+ //Matter.Body.setStatic(player.body,false);
  }
 function draw(){
 background(153,217,234);
 Engine.update(engine);
-keyPressed();
 for (let p = 0; p < bedrocks.length; p++) {
     bedrocks[p].display();
 }
@@ -56,6 +55,7 @@ for (let s = 0; s < stones.length; s++) {
 
 for (let m = 0; m < grass.length; m++) {
     grass[m].display();
+    console.log(grass[m].body.position.y)
 }
 
 for (let k = 0; k < dirts.length; k++) {
@@ -70,7 +70,8 @@ for (let y = 0; y < leaves.length; y++) {
     leaves[y].display();
 }
  player.display();
- console.log(player.position)
+ //console.log(player.body.position.x)
+ 
 }
 
 function trees(x,y){
@@ -100,14 +101,14 @@ function hill2(x,y){
     
 }
 
-function keyPressed(){
-    if(keyDown(87)){
+/*function keyPressed(){
+    if(keyCode===87){
         player.body.position.x+=1
        }
-     if(keyDown(83)){
-         player.body.position.x+=-1
+     if(keyCode===83){
+         player.body.position.x-=1
      }
       //if((74)){
      //  player.body.position.y+=-8
      //  }
-}
+}*/
